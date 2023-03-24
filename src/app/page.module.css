@@ -105,7 +105,10 @@
 
 .logo,
 .thirteen {
+  object-fit: contain;
   position: relative;
+  max-height: 70vh;
+  margin: auto;
 }
 
 .thirteen {
