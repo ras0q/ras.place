@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --dir ./src",
+    "format": "prettier --write --ignore-path .gitignore ./src"
   },
   "dependencies": {
     "@types/node": "18.15.7",
@@ -22,5 +23,9 @@
   "volta": {
     "node": "18.15.0",
     "yarn": "3.5.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.7"
   }
 }
