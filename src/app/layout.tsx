@@ -29,8 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body>
         <StyledComponentsRegistry>
-          <Header />
-          {children}
+          <>
+            <Header />
+            {children}
+          </>
         </StyledComponentsRegistry>
       </body>
     </html>
