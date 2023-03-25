@@ -1,10 +1,27 @@
+'use client'
+
 import Image from 'next/image'
-import styles from './page.module.css'
+import styled from 'styled-components'
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+`
+
+const Logo = styled(Image)`
+  object-fit: contain;
+  position: relative;
+  max-height: 70vh;
+  margin: auto;
+`
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Image className={styles.logo} src='/logo.svg' alt='Portfolio Logo' fill />
-    </main>
+    <Main>
+      <Logo src='/logo.svg' alt='Portfolio Logo' fill />
+    </Main>
   )
 }
