@@ -16,7 +16,7 @@ const Nav = styled.nav`
   gap: 1rem;
 `
 
-export default function Header() {
+export const Header = () => {
   return (
     <header>
       <nav>

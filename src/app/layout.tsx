@@ -1,5 +1,5 @@
 import './globals.css'
-import Header from './header'
+import { Header } from '../components/Header'
 import StyledComponentsRegistry from '@/lib/styledComponentRegistry'
 
 export const metadata = {
