@@ -50,10 +50,34 @@ export const worksByCategory: {
       name: 'ras.place',
       link: 'https://ras.place',
       duration: '2023/03 -',
-      description: 'このポートフォリオ',
+      description: `このポートフォリオ
+      Next.jsを使って作られている`,
     },
     {
-      name: 'iOS traQ Clone App (WIP)',
+      name: 'slides',
+      link: 'https://slides.ras.place',
+      duration: '2022/12 -',
+      description: `作ったスライドの一覧
+      スライドはMarpで作っている`,
+    },
+    {
+      name: 'slitscan3d',
+      link: 'https://slitscan3d.ras.place',
+      externalLinks: [
+        {
+          href: 'https://trap.jp/post/1841/',
+          text: '紹介ブログ',
+        },
+        {
+          href: 'https://github.com/ras0q/slitscan3d',
+          text: 'GitHub',
+        },
+      ],
+      duration: '2023/02 - 2023/04',
+      description: 'Three.jsを使ったSlit-Scanアプリ',
+    },
+    {
+      name: 'traQ iOS (WIP)',
       externalLinks: [
         {
           href: 'https://github.com/ras0q/traq-ios-clone',
@@ -75,7 +99,7 @@ export const worksByCategory: {
           text: 'GitHub',
         },
       ],
-      duration: '',
+      duration: '2020/11',
       description: 'Goの構造体のコンストラクタ関数を自動生成するCLIツール',
     },
     {
@@ -90,7 +114,7 @@ export const worksByCategory: {
           text: 'GitHub',
         },
       ],
-      duration: '',
+      duration: '2022/12',
       description: 'Websocket通信を対話形式でテストできるようにしたCLIツール',
     },
     {
@@ -108,21 +132,40 @@ export const worksByCategory: {
       duration: 'ISUCON12予選',
       description: 'Elasticsearch、Kibana、FluentBit、Luaなどを使用したISUCONのダッシュボード',
     },
+  ],
+  'Personal Library': [
     {
-      name: 'slitscan3d',
-      link: 'https://slitscan3d.ras.place',
+      name: 'traq-writer (Go)',
       externalLinks: [
         {
-          href: 'https://trap.jp/post/1841/',
-          text: '紹介ブログ',
-        },
-        {
-          href: 'https://github.com/ras0q/slitscan3d',
+          href: 'https://github.com/ras0q/traq-writer',
           text: 'GitHub',
         },
       ],
-      duration: '',
-      description: 'Three.jsを使ったSlit-Scanアプリ',
+      duration: '2022/03',
+      description: 'io.Writerに準拠したtraQ WebHookライブラリ',
+    },
+    {
+      name: 'traq-oauth2 (Go)',
+      externalLinks: [
+        {
+          href: 'https://github.com/ras0q/traq-oauth2',
+          text: 'GitHub',
+        },
+      ],
+      duration: '2023/02',
+      description: 'traQ Oauth2.0ライブラリ',
+    },
+    {
+      name: 'swift-traq (Swift)',
+      externalLinks: [
+        {
+          href: 'https://github.com/traPtitech/swift-traq',
+          text: 'GitHub',
+        },
+      ],
+      duration: '2022/08 - 2020/10',
+      description: 'traQのSwiftクライアントライブラリ',
     },
   ],
   'traP Project': [
@@ -148,7 +191,7 @@ export const worksByCategory: {
           text: '紹介ブログ',
         },
       ],
-      duration: 'traP Hackathon 2020年春',
+      duration: 'traP Hackathon 2020 Spring',
       description: '気圧を操作しゴールを目指すゲーム',
     },
     {
@@ -160,7 +203,7 @@ export const worksByCategory: {
           text: '紹介ブログ',
         },
       ],
-      duration: 'traP Hackathon 2020年冬',
+      duration: 'traP Hackathon 2020 Winter',
       description: '部内SNS『traQ』のカスタムテーマを作成するサービス',
     },
     {
@@ -176,7 +219,7 @@ export const worksByCategory: {
           text: 'GitHub',
         },
       ],
-      duration: 'traP Hackathon 2021年春',
+      duration: 'traP Hackathon 2021 Spring',
       description: '部内SNS『traQ』に投稿された曲を一覧できるサービス',
     },
     {
@@ -189,14 +232,10 @@ export const worksByCategory: {
         },
         {
           href: 'https://github.com/21hack02win/nascalay-backend',
-          text: 'GitHub (backend)',
-        },
-        {
-          href: 'https://github.com/21hack02win/nascalay-frontend',
-          text: 'GitHub (frontend)',
+          text: 'GitHub',
         },
       ],
-      duration: 'traP Hackathon 2021年冬',
+      duration: 'traP Hackathon 2021 Winter',
       description: 'プレイヤー同士で協力してお題を完成させるお絵かきリレー',
     },
     {
@@ -212,8 +251,35 @@ export const worksByCategory: {
           text: 'GitHub',
         },
       ],
-      duration: 'traP Hackathon 2022年春',
+      duration: 'traP Hackathon 2022 Spring',
       description: '部内SNS『traQ』で用いるスタンプの生成ツール',
+    },
+  ],
+  Other: [
+    {
+      name: 'memoru',
+      link: 'https://memoru.trasta.dev/',
+      externalLinks: [
+        {
+          href: 'https://www.pref.miyagi.jp/documents/45294/04.pdf',
+          text: '発表スライド',
+        },
+      ],
+      duration: '2023/03/02 - 2023/03/04',
+      description: `みやぎハッカソン2023の成果物
+      旅行先で集めたアイテムを仮想空間の家に飾ることができるアプリ`,
+    },
+    {
+      name: 'missingtypeguard',
+      externalLinks: [
+        {
+          href: 'https://github.com/ras0q/missingtypeguard',
+          text: 'GitHub',
+        },
+      ],
+      duration: '2023/03',
+      description: `Gopher Enablement Internship day2&3の成果物
+      Goのソースコードを静的解析しtype guardが足りない箇所を検出するツール`,
     },
   ],
 }
