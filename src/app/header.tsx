@@ -31,9 +31,6 @@ export default function Header() {
             <Link href='/works'>
               <h3>Works</h3>
             </Link>
-            <Link href='/links'>
-              <h3>Links</h3>
-            </Link>
           </Nav>
         </HeadContainer>
       </nav>
