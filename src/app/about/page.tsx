@@ -5,7 +5,7 @@ import { accountLinks, skills } from '@/consts'
 import styled from 'styled-components'
 
 const Main = styled.main`
-  padding: 4rem 18rem;
+  padding: 4rem 12rem;
 
   li {
     list-style: none;
