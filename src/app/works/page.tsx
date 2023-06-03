@@ -7,6 +7,10 @@ import styled from 'styled-components'
 const Main = styled.main`
   padding: 4rem 12rem;
 
+  @media screen and (max-width: 480px) {
+    padding: 4rem 2rem;
+  }
+
   li {
     display: frex;
     list-style: none;

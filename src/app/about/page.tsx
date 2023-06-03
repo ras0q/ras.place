@@ -8,6 +8,10 @@ const Main = styled.main`
   padding: 4rem 12rem;
   white-space: pre-wrap;
 
+  @media screen and (max-width: 480px) {
+    padding: 4rem 2rem;
+  }
+
   li {
     list-style: none;
   }
