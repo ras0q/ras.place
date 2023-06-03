@@ -22,9 +22,15 @@ export default function Works() {
           <li key={name}>
             <div>
               <div>
-                <h2>
-                  <Link href={link}>{name}</Link>
-                </h2>
+                {link ? (
+                  <h2>
+                    <Link target='_blank' href={link}>
+                      {name}
+                    </Link>
+                  </h2>
+                ) : (
+                  <h2>{name}</h2>
+                )}
                 <p>{duration}</p>
               </div>
               <p>{description}</p>

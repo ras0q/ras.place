@@ -20,10 +20,14 @@ export default function About() {
         <h2>Belonging</h2>
         <ul>
           <li>
-            <Link href='https://www.titech.ac.jp/'>Tokyo Institute of Technology</Link>
+            <Link target='_blank' href='https://www.titech.ac.jp/'>
+              Tokyo Institute of Technology
+            </Link>
           </li>
           <li>
-            <Link href='https://trap.jp/'>Digital Creators Club traP</Link>
+            <Link target='_blank' href='https://trap.jp/'>
+              Digital Creators Club traP
+            </Link>
           </li>
         </ul>
       </section>
@@ -50,7 +54,9 @@ export default function About() {
         <ul>
           {accountLinks.map(({ href, text }) => (
             <li key={text}>
-              <Link href={href}>{text}</Link>
+              <Link target='_blank' href={href}>
+                {text}
+              </Link>
             </li>
           ))}
         </ul>
