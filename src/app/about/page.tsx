@@ -1,7 +1,7 @@
 'use client'
 
+import { ExternalLink } from '@/components/ExternalLink'
 import { accountLinks, skills } from '@/consts'
-import Link from 'next/link'
 import styled from 'styled-components'
 
 const Main = styled.main`
@@ -20,14 +20,12 @@ export default function About() {
         <h2>Belonging</h2>
         <ul>
           <li>
-            <Link target='_blank' href='https://www.titech.ac.jp/'>
+            <ExternalLink href='https://www.titech.ac.jp/'>
               Tokyo Institute of Technology
-            </Link>
+            </ExternalLink>
           </li>
           <li>
-            <Link target='_blank' href='https://trap.jp/'>
-              Digital Creators Club traP
-            </Link>
+            <ExternalLink href='https://trap.jp/'>Digital Creators Club traP</ExternalLink>
           </li>
         </ul>
       </section>
@@ -54,9 +52,7 @@ export default function About() {
         <ul>
           {accountLinks.map(({ href, text }) => (
             <li key={text}>
-              <Link target='_blank' href={href}>
-                {text}
-              </Link>
+              <ExternalLink href={href}>{text}</ExternalLink>
             </li>
           ))}
         </ul>
