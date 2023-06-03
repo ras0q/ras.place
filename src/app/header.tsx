@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 
-const Container = styled.div`
+const HeadContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <Container>
+        <HeadContainer>
           <Link href='/'>
             <h1>ras.place</h1>
           </Link>
@@ -35,7 +35,7 @@ export default function Header() {
               <h3>Links</h3>
             </Link>
           </Nav>
-        </Container>
+        </HeadContainer>
       </nav>
     </header>
   )

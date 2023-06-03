@@ -27,14 +27,12 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body>
-        <StyledComponentsRegistry>
-          <>
-            <Header />
-            {children}
-          </>
-        </StyledComponentsRegistry>
-      </body>
+      <StyledComponentsRegistry>
+        <body>
+          <Header />
+          {children}
+        </body>
+      </StyledComponentsRegistry>
     </html>
   )
 }
