@@ -1,5 +1,6 @@
 'use client'
 
+import { accountLinks, skills } from '@/consts'
 import Link from 'next/link'
 import styled from 'styled-components'
 
@@ -10,39 +11,6 @@ const Main = styled.main`
     list-style: none;
   }
 `
-
-const skills = [
-  { name: 'Go' },
-  { name: 'JavaScript' },
-  { name: 'TypeScript' },
-  { name: 'Swift' },
-  { name: 'Python' },
-  { name: 'React' },
-  { name: 'C++' },
-]
-
-const links = [
-  {
-    href: 'https://twitter.com/ras0q',
-    text: 'Twitter@ras0q',
-  },
-  {
-    href: 'https://github.com/ras0q',
-    text: 'Github@ras0q',
-  },
-  {
-    href: 'https://scrapbox.io/ras0q',
-    text: 'Scrapbox@ras0q',
-  },
-  {
-    href: 'https://fedibird.com/@ras',
-    text: 'Mastodon@ras',
-  },
-  {
-    href: 'https://trap.jp/author/ras',
-    text: 'traP blog',
-  },
-]
 
 export default function About() {
   return (
@@ -80,7 +48,7 @@ export default function About() {
       <section>
         <h2>Links</h2>
         <ul>
-          {links.map(({ href, text }) => (
+          {accountLinks.map(({ href, text }) => (
             <li key={text}>
               <Link href={href}>{text}</Link>
             </li>
