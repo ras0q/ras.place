@@ -9,6 +9,10 @@ const HeadContainer = styled.header`
   align-items: center;
   list-style: none;
   padding: 1rem;
+
+  a {
+    text-decoration: none;
+  }
 `
 
 const Nav = styled.nav`
