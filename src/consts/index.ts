@@ -272,7 +272,7 @@ export const worksByCategory: {
       description: '部内SNS『traQ』で用いるスタンプの生成ツール',
     },
   ],
-  'Other': [
+  Other: [
     {
       name: 'memoru',
       link: 'https://memoru.trasta.dev/',
