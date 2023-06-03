@@ -1,11 +1,12 @@
 'use client'
 
 import { ExternalLink } from '@/components/ExternalLink'
-import { accountLinks, skills } from '@/consts'
+import { aboutMe, accountLinks, belongings, skills } from '@/consts'
 import styled from 'styled-components'
 
 const Main = styled.main`
   padding: 4rem 12rem;
+  white-space: pre-wrap;
 
   li {
     list-style: none;
@@ -19,14 +20,11 @@ export default function About() {
       <section>
         <h2>Belonging</h2>
         <ul>
-          <li>
-            <ExternalLink href='https://www.titech.ac.jp/'>
-              Tokyo Institute of Technology
-            </ExternalLink>
-          </li>
-          <li>
-            <ExternalLink href='https://trap.jp/'>Digital Creators Club traP</ExternalLink>
-          </li>
+          {belongings.map(({ name, href }) => (
+            <li key={name}>
+              <ExternalLink href={href}>{name}</ExternalLink>
+            </li>
+          ))}
         </ul>
       </section>
       <section>
@@ -39,13 +37,7 @@ export default function About() {
       </section>
       <section>
         <h2>About</h2>
-        <p>
-          大学に入学してからプログラミングを始めました。
-          <br />
-          現在はバックエンドとiOSアプリの開発をメインに行っています。
-          <br />
-          大学では情報通信工学を専攻しており、デジタル創作同好会traPというサークルで活動しています。
-        </p>
+        <p>{aboutMe}</p>
       </section>
       <section>
         <h2>Links</h2>

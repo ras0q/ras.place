@@ -1,3 +1,14 @@
+export const belongings = [
+  {
+    name: 'Tokyo Institute of Technology',
+    href: 'https://www.titech.ac.jp/',
+  },
+  {
+    name: 'Digital Creators Club traP',
+    href: 'https://trap.jp/',
+  },
+]
+
 export const skills = [
   { name: 'Go' },
   { name: 'JavaScript' },
@@ -7,6 +18,12 @@ export const skills = [
   { name: 'React' },
   { name: 'C++' },
 ]
+
+export const aboutMe = [
+  `大学に入学してからプログラミングを始めました。`,
+  `現在はバックエンドとiOSアプリの開発をメインに行っています。`,
+  `大学では情報通信工学を専攻し、デジタル創作同好会traPというサークルで活動しています。`,
+].join('\n')
 
 export const accountLinks = [
   {
