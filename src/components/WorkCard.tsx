@@ -1,5 +1,5 @@
-import { Work } from '@/consts'
 import { ExternalLink } from '@/components/ExternalLink'
+import { Work } from '@/consts'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -12,7 +12,7 @@ const Container = styled.div`
 `
 
 export const WorkCard = ({ work }: { work: Work }) => {
-  const { name, link, externalLinks, duration, description } = work
+  const { name, link, externalLinks, duration, description, role } = work
   return (
     <Container>
       <div>
@@ -20,6 +20,7 @@ export const WorkCard = ({ work }: { work: Work }) => {
         <p>{duration}</p>
       </div>
       <p>{description}</p>
+      {role && <p>Role: {role}</p>}
       {externalLinks && (
         <ul>
           {externalLinks.map(({ href, text }) => (
