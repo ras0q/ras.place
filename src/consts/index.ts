@@ -271,6 +271,26 @@ export const worksByCategory: {
       duration: 'traP Hackathon 2022 Spring',
       description: '部内SNS『traQ』で用いるスタンプの生成ツール',
     },
+    {
+      name: 'traP Mission',
+      link: 'https://mission.trap.games',
+      externalLinks: [
+        {
+          href: 'https://trap.jp/post/1909/',
+          text: '紹介ブログ',
+        },
+        {
+          href: 'https://github.com/traP-jp/h23s_26',
+          text: 'GitHub(backend)',
+        },
+        {
+          href: 'https://github.com/traP-jp/h23s_26-UI',
+          text: 'GitHub(frontend)',
+        },
+      ],
+      duration: 'traP Hackathon 2023 Spring',
+      description: '部内SNS『traQ』で用いるミッションを作成するサービス',
+    },
   ],
   Other: [
     {
