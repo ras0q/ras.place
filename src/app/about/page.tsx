@@ -1,7 +1,7 @@
 'use client'
 
-import { ExternalLink } from '@/components/ExternalLink'
 import { aboutMe, accountLinks, belongings, skills } from '@/consts'
+import Link  from 'next/link'
 import styled from 'styled-components'
 
 const Main = styled.main`
@@ -26,7 +26,9 @@ export default function About() {
         <ul>
           {belongings.map(({ name, href }) => (
             <li key={name}>
-              <ExternalLink href={href}>{name}</ExternalLink>
+              <Link target='_blank' href={href}>
+                {name}
+              </Link>
             </li>
           ))}
         </ul>
@@ -48,7 +50,7 @@ export default function About() {
         <ul>
           {accountLinks.map(({ href, text }) => (
             <li key={text}>
-              <ExternalLink href={href}>{text}</ExternalLink>
+              <Link target='_blank' href={href}>{text}</Link>
             </li>
           ))}
         </ul>
