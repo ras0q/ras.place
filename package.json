@@ -11,8 +11,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --dir ./src",
-    "format": "prettier --write --ignore-path .gitignore ./src"
+    "check": "biome check --changed .",
+    "check:all": "biome check ."
   },
   "dependencies": {
     "@types/node": "20.11.5",
@@ -28,8 +28,6 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.2.4",
-    "prettier-plugin-organize-imports": "^3.2.4"
+    "@biomejs/biome": "1.5.2"
   }
 }

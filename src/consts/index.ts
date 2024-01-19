@@ -20,9 +20,9 @@ export const skills = [
 ]
 
 export const aboutMe = [
-  `大学に入学してからプログラミングを始めました。`,
-  `現在はバックエンドとiOSアプリの開発をメインに行っています。`,
-  `大学では情報通信工学を専攻し, デジタル創作同好会traPというサークルで活動しています。`,
+  '大学に入学してからプログラミングを始めました。',
+  '現在はバックエンドとiOSアプリの開発をメインに行っています。',
+  '大学では情報通信工学を専攻し, デジタル創作同好会traPというサークルで活動しています。',
 ].join('\n')
 
 export const accountLinks = [
@@ -197,7 +197,7 @@ export const worksByCategory: {
       ],
       duration: '2020/03 -',
       description: '部員のポートフォリオサイトや各種リンクなどをまとめる外部向けサービス',
-      role: 'プロジェクトリーダー, バックエンド'
+      role: 'プロジェクトリーダー, バックエンド',
     },
   ],
   'traP Hackathon': [
@@ -212,7 +212,7 @@ export const worksByCategory: {
       ],
       duration: 'traP Hackathon 2020 Spring',
       description: '気圧を操作しゴールを目指すゲーム',
-      role: 'ゲームプログラミング'
+      role: 'ゲームプログラミング',
     },
     {
       name: 'Qtheme',
@@ -225,7 +225,7 @@ export const worksByCategory: {
       ],
       duration: 'traP Hackathon 2020 Winter',
       description: '部内SNS『traQ』のカスタムテーマを作成するサービス',
-      role: 'バックエンド'
+      role: 'バックエンド',
     },
     {
       name: 'Qtunes',
@@ -242,7 +242,7 @@ export const worksByCategory: {
       ],
       duration: 'traP Hackathon 2021 Spring',
       description: '部内SNS『traQ』に投稿された曲を一覧できるサービス',
-      role: 'チームリーダー, バックエンド'
+      role: 'チームリーダー, バックエンド',
     },
     {
       name: 'Nascalay',
@@ -259,7 +259,7 @@ export const worksByCategory: {
       ],
       duration: 'traP Hackathon 2021 Winter',
       description: 'プレイヤー同士で協力してお題を完成させるお絵かきリレー',
-      role: 'バックエンド'
+      role: 'バックエンド',
     },
     {
       name: 'stamQ',
@@ -276,7 +276,7 @@ export const worksByCategory: {
       ],
       duration: 'traP Hackathon 2022 Spring',
       description: '部内SNS『traQ』で用いるスタンプの生成ツール',
-      role: 'チームリーダー, バックエンド'
+      role: 'チームリーダー, バックエンド',
     },
     {
       name: 'traP Mission',
@@ -297,7 +297,7 @@ export const worksByCategory: {
       ],
       duration: 'traP Hackathon 2023 Spring',
       description: '部内SNS『traQ』で用いるミッションを作成するサービス',
-      role: 'チームリーダー, バックエンド, フロントエンド'
+      role: 'チームリーダー, バックエンド, フロントエンド',
     },
   ],
   Other: [
@@ -313,7 +313,7 @@ export const worksByCategory: {
       duration: '2023/03/02 - 2023/03/04',
       description: `みやぎハッカソン2023の成果物
       旅行先で集めたアイテムを仮想空間の家に飾ることができるアプリ`,
-      role: 'バックエンド'
+      role: 'バックエンド',
     },
     {
       name: 'missingtypeguard',

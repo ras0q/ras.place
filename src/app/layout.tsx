@@ -1,6 +1,6 @@
-import './globals.css'
-import { Header } from '../components/Header'
 import StyledComponentsRegistry from '@/lib/styledComponentRegistry'
+import { Header } from '../components/Header'
+import './globals.css'
 
 export const metadata = {
   title: 'Ras',
