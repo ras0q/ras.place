@@ -1,6 +1,7 @@
 import StyledComponentsRegistry from '@/lib/styledComponentRegistry'
+// import './globals.css'
+import 'modern-normalize/modern-normalize.css'
 import { Header } from '../components/Header'
-import './globals.css'
 
 export const metadata = {
   title: 'Ras',
